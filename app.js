@@ -1,3 +1,21 @@
+window.addEventListener('resize', function() {
+    ajustarTamaño();
+});
+
+function ajustarTamaño() {
+    const width = window.innerWidth;
+    const container = document.querySelector('.container');
+    
+    if (width < 768) {
+        container.style.flexDirection = 'column';
+    } else {
+        container.style.flexDirection = 'row';
+    }
+}
+
+ajustarTamaño();  // Llamar a la función para el tamaño inicial
+
+
 let numeroSecreto = 0;
 let intentos = 0;
 let listaNumerosSorteados = [];

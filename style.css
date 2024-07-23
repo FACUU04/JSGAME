@@ -116,7 +116,7 @@ button {
 
 .container__imagen-persona {
     width: 100%;
-    max-width: 300px;
+    max-width: 480px;
     height: auto;
     margin-top: 2rem;
 }
